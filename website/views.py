@@ -3,7 +3,10 @@ from django.http import HttpResponse
 
 
 def Index(request):
-    return HttpResponse("Hello World")
+    # return HttpResponse("Hello World")
+    return render(request, "website/index.html")
 
 
-# {'key': "value"}
+def About(request):
+    return HttpResponse("About US")
+
