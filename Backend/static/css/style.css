@@ -4,11 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+a{
+    text-decoration: none;
+}
 
 body {
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
     width: 100vw;
+    
 }
 
 .box{
@@ -30,3 +34,60 @@ header nav{
     flex-direction: row;
     gap: 10px;
 } */
+
+.hero-section{
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.hero-section .carousel .carousel-inner .carousel-item{
+    height: 90vh;
+    width: 100vw;
+}
+.hero-section .carousel .carousel-inner .carousel-item img{
+    height: 90vh;
+    width: 100vw;
+    object-fit: fit;
+}
+
+.hero-section #img1{
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1752643719497-b91314d6d253'); */
+    background: linear-gradient(to right, rgba(64, 64, 205, 0.475), rgba(255, 255, 255, 0.081), gray), url('https://images.unsplash.com/photo-1752643719497-b91314d6d253');
+
+    background-size: 100vw 100vh;
+
+}
+
+.header-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.header-text h1{
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.header-text p{
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.header-text .buttons a{
+    padding: 10px 40px;
+    /* background: blue; */
+    color: white;
+    border: 1px solid yellow;
+    font-size: 1.3rem;
+    margin: 30px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    border-top: 5px solid blue;
+    border-left: none;
+    border-bottom: 5px solid blue;
+    border-right: none;
+}
